@@ -92,5 +92,381 @@
                 "validation_time": 0.13378691673278809
             }
         ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 10,
+            "epochs": 5,
+            "learning_rate": 0.001,
+            "momentum": 0.9,
+            "batch_size": 16,
+            "note": "Set learning_rate to 0.001 with hidden_dim=10 and batch_size=16. Hypothesis: Lower learning rate may lead to slower convergence but potentially better validation accuracy."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.431875,
+                "training_time": 2.9133691787719727,
+                "validation_accuracy": 0.5,
+                "validation_time": 0.18942570686340332
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.48475,
+                "training_time": 2.1875948905944824,
+                "validation_accuracy": 0.54,
+                "validation_time": 0.13674187660217285
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.516875,
+                "training_time": 2.2057549953460693,
+                "validation_accuracy": 0.525,
+                "validation_time": 0.13842391967773438
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.531875,
+                "training_time": 2.258716106414795,
+                "validation_accuracy": 0.5475,
+                "validation_time": 0.15941238403320312
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.530125,
+                "training_time": 2.296717882156372,
+                "validation_accuracy": 0.5675,
+                "validation_time": 0.12996983528137207
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 10,
+            "epochs": 5,
+            "learning_rate": 0.1,
+            "momentum": 0.9,
+            "batch_size": 16,
+            "note": "Set learning_rate to 0.1 with hidden_dim=10 and batch_size=16. Hypothesis: Higher learning rate may cause unstable training and poor convergence."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.40325,
+                "training_time": 3.025487184524536,
+                "validation_accuracy": 0.4,
+                "validation_time": 0.19363999366760254
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.400375,
+                "training_time": 2.342424154281616,
+                "validation_accuracy": 0.39875,
+                "validation_time": 0.13337397575378418
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.395625,
+                "training_time": 2.2183470726013184,
+                "validation_accuracy": 0.4,
+                "validation_time": 0.14458799362182617
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.395125,
+                "training_time": 2.387070894241333,
+                "validation_accuracy": 0.4,
+                "validation_time": 0.13000893592834473
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.404375,
+                "training_time": 2.254009962081909,
+                "validation_accuracy": 0.4,
+                "validation_time": 0.13451480865478516
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 10,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "batch_size": 32,
+            "note": "Set batch_size to 32 with hidden_dim=10 and learning_rate=0.01. Hypothesis: Larger batch size may lead to faster training per epoch but less noisy gradients."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.473875,
+                "training_time": 1.5529379844665527,
+                "validation_accuracy": 0.54875,
+                "validation_time": 0.06556391716003418
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.531875,
+                "training_time": 1.0733020305633545,
+                "validation_accuracy": 0.5525,
+                "validation_time": 0.05927610397338867
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.570875,
+                "training_time": 1.0633411407470703,
+                "validation_accuracy": 0.55,
+                "validation_time": 0.05872511863708496
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.5755,
+                "training_time": 1.061479091644287,
+                "validation_accuracy": 0.5475,
+                "validation_time": 0.05905628204345703
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.60275,
+                "training_time": 1.1460580825805664,
+                "validation_accuracy": 0.59625,
+                "validation_time": 0.06354212760925293
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 10,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "batch_size": 64,
+            "note": "Set batch_size to 64 with hidden_dim=10 and learning_rate=0.01. Hypothesis: Even larger batch size might reduce generalization due to less stochasticity."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.450125,
+                "training_time": 1.0988249778747559,
+                "validation_accuracy": 0.5611979166666666,
+                "validation_time": 0.03966093063354492
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.513,
+                "training_time": 0.6218609809875488,
+                "validation_accuracy": 0.5846354166666666,
+                "validation_time": 0.03299903869628906
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.555875,
+                "training_time": 0.6384339332580566,
+                "validation_accuracy": 0.5716145833333334,
+                "validation_time": 0.03421902656555176
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.5755,
+                "training_time": 0.6344733238220215,
+                "validation_accuracy": 0.57421875,
+                "validation_time": 0.03428292274475098
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.5825,
+                "training_time": 0.6630730628967285,
+                "validation_accuracy": 0.6106770833333334,
+                "validation_time": 0.03556704521179199
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "batch_size": 16,
+            "note": "Increased hidden_dim to 50 with learning_rate=0.01 and batch_size=16. Hypothesis: Larger model capacity may improve training accuracy but risk overfitting."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.509625,
+                "training_time": 3.898358106613159,
+                "validation_accuracy": 0.54375,
+                "validation_time": 0.17658591270446777
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.5635,
+                "training_time": 3.2288711071014404,
+                "validation_accuracy": 0.57,
+                "validation_time": 0.11386227607727051
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.58925,
+                "training_time": 3.141857147216797,
+                "validation_accuracy": 0.57,
+                "validation_time": 0.11314678192138672
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.6125,
+                "training_time": 3.390583038330078,
+                "validation_accuracy": 0.52125,
+                "validation_time": 0.16535592079162598
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.62575,
+                "training_time": 3.385345935821533,
+                "validation_accuracy": 0.57875,
+                "validation_time": 0.11222505569458008
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 100,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "batch_size": 16,
+            "note": "Increased hidden_dim to 100 with learning_rate=0.01 and batch_size=16. Hypothesis: Further increase in capacity may lead to overfitting unless regularization is applied."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.505,
+                "training_time": 5.444086074829102,
+                "validation_accuracy": 0.54,
+                "validation_time": 0.19248390197753906
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.57275,
+                "training_time": 4.628126859664917,
+                "validation_accuracy": 0.5775,
+                "validation_time": 0.1238241195678711
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.59975,
+                "training_time": 4.60039496421814,
+                "validation_accuracy": 0.58,
+                "validation_time": 0.11907815933227539
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.621875,
+                "training_time": 4.50217604637146,
+                "validation_accuracy": 0.6,
+                "validation_time": 0.1227109432220459
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.63475,
+                "training_time": 4.536508083343506,
+                "validation_accuracy": 0.60625,
+                "validation_time": 0.12087416648864746
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 5,
+            "learning_rate": 0.001,
+            "momentum": 0.9,
+            "batch_size": 16,
+            "note": "Combined lower learning_rate (0.001) with larger hidden_dim (50). Hypothesis: Slower learning might mitigate overfitting and improve validation accuracy."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.416125,
+                "training_time": 3.632556676864624,
+                "validation_accuracy": 0.4775,
+                "validation_time": 0.18250679969787598
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.49475,
+                "training_time": 3.155255079269409,
+                "validation_accuracy": 0.53125,
+                "validation_time": 0.11142086982727051
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.5305,
+                "training_time": 3.089555025100708,
+                "validation_accuracy": 0.54625,
+                "validation_time": 0.11104202270507812
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.5635,
+                "training_time": 3.0650837421417236,
+                "validation_accuracy": 0.555,
+                "validation_time": 0.11010622978210449
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.58375,
+                "training_time": 3.2099990844726562,
+                "validation_accuracy": 0.56,
+                "validation_time": 0.1174929141998291
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 100,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "batch_size": 32,
+            "note": "Combined larger batch_size (32) with larger hidden_dim (100). Hypothesis: Larger batch size may help stabilize training with larger model."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.490625,
+                "training_time": 3.1530709266662598,
+                "validation_accuracy": 0.54875,
+                "validation_time": 0.14997100830078125
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.565125,
+                "training_time": 2.491621732711792,
+                "validation_accuracy": 0.5725,
+                "validation_time": 0.06751704216003418
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.60375,
+                "training_time": 2.441495180130005,
+                "validation_accuracy": 0.60875,
+                "validation_time": 0.06398797035217285
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.63275,
+                "training_time": 2.3723530769348145,
+                "validation_accuracy": 0.60375,
+                "validation_time": 0.0638129711151123
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.645125,
+                "training_time": 2.2461600303649902,
+                "validation_accuracy": 0.60625,
+                "validation_time": 0.06454205513000488
+            }
+        ]
     }
 ]

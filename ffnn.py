@@ -129,16 +129,18 @@ if __name__ == "__main__":
     parser.add_argument("--test_data", default="to fill", help="path to test data")
     parser.add_argument('--do_train', action='store_true')
     parser.add_argument("--note", default="", help="Notes about code changes or hyperparameters")  # New argument for code notes
+    parser.add_argument("-lr", "--learning_rate", type=float, default=0.01, help="learning rate") #to adjust learning rate
+    parser.add_argument("-bs", "--batch_size", type=int, default=16, help="batch size") #to adjust batch size   
     args = parser.parse_args()
 
     # Save hyperparameters and any additional notes
     hyperparameters = {
         'hidden_dim': args.hidden_dim,
         'epochs': args.epochs,
-        'learning_rate': 0.01,
+        'learning_rate': args.learning_rate,
         'momentum': 0.9,
-        'minibatch_size': 16,
-        'note': args.note  # Store any code change notes here
+        'batch_size': args.batch_size,
+        'note': args.note
     }
 
     # Set random seed for reproducibility
@@ -167,7 +169,7 @@ if __name__ == "__main__":
     # Initialize model and move it to the appropriate device
     model = FFNN(input_dim=len(vocab), h=args.hidden_dim)
     model.to(device)  # Move model to device (CPU or MPS)
-    optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
+    optimizer = optim.SGD(model.parameters(), lr=args.learning_rate, momentum=0.9)
     results = []  # Initialize an empty list to store results for each epoch
 
     print("========== Training for {} epochs ==========".format(args.epochs))
@@ -180,7 +182,7 @@ if __name__ == "__main__":
         
         # Shuffle data at the start of each epoch
         random.shuffle(train_data)
-        minibatch_size = 16
+        minibatch_size = args.batch_size  # Use args.batch_size instead of hardcoded value
         N = len(train_data)
         
         for minibatch_index in tqdm(range(N // minibatch_size)):
