@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 from torch.nn import init
 import torch.optim as optim
+from torch.optim.lr_scheduler import StepLR
 import math
 import random
 import os
@@ -29,7 +30,7 @@ class FFNN(nn.Module):
         self.W3 = nn.Linear(h, self.output_dim)  # Third transformation to the output layer size
         
         # Other layers and functions used within the network
-        self.dropout = nn.Dropout(0.2)       # Dropout for regularization
+        self.dropout = nn.Dropout(0.5)       # Dropout for regularization #adjusted to 0.5 for experiment was at 0.2
         self.activation = nn.ReLU()          # ReLU activation function
         self.softmax = nn.LogSoftmax(dim=1)  # LogSoftmax for output (to convert to log probabilities)
         self.loss = nn.NLLLoss()             # Negative Log-Likelihood Loss for classification
@@ -130,7 +131,9 @@ if __name__ == "__main__":
     parser.add_argument('--do_train', action='store_true')
     parser.add_argument("--note", default="", help="Notes about code changes or hyperparameters")  # New argument for code notes
     parser.add_argument("-lr", "--learning_rate", type=float, default=0.01, help="learning rate") #to adjust learning rate
-    parser.add_argument("-bs", "--batch_size", type=int, default=16, help="batch size") #to adjust batch size   
+    parser.add_argument("-bs", "--batch_size", type=int, default=16, help="batch size") #to adjust batch size  
+    parser.add_argument("--weight_decay", type=float, default=0.0, help="weight decay (L2 regularization)") #weight decay
+
     args = parser.parse_args()
 
     # Save hyperparameters and any additional notes
@@ -138,10 +141,12 @@ if __name__ == "__main__":
         'hidden_dim': args.hidden_dim,
         'epochs': args.epochs,
         'learning_rate': args.learning_rate,
-        'momentum': 0.9,
+        'momentum': 0.9,  # Remove this if using Adam
         'batch_size': args.batch_size,
+        'weight_decay': args.weight_decay,
         'note': args.note
-    }
+}
+
 
     # Set random seed for reproducibility
     random.seed(42)
@@ -169,7 +174,10 @@ if __name__ == "__main__":
     # Initialize model and move it to the appropriate device
     model = FFNN(input_dim=len(vocab), h=args.hidden_dim)
     model.to(device)  # Move model to device (CPU or MPS)
-    optimizer = optim.SGD(model.parameters(), lr=args.learning_rate, momentum=0.9)
+    optimizer = optim.SGD(model.parameters(), lr=args.learning_rate, momentum=0.9, weight_decay=args.weight_decay) #updated for weight decay
+    #optimizer = optim.Adam(model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay)
+
+
     results = []  # Initialize an empty list to store results for each epoch
 
     print("========== Training for {} epochs ==========".format(args.epochs))

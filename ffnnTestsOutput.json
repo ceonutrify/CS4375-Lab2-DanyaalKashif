@@ -468,5 +468,557 @@
                 "validation_time": 0.06454205513000488
             }
         ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 20,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "batch_size": 16,
+            "note": "Increased epochs to 20 with hidden_dim=50, learning_rate=0.01, batch_size=16. Hypothesis: More epochs allow the model to learn better patterns, but risk overfitting; monitor validation accuracy for early signs of overfitting."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.509625,
+                "training_time": 3.797536611557007,
+                "validation_accuracy": 0.54375,
+                "validation_time": 0.1923818588256836
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.5635,
+                "training_time": 3.1364219188690186,
+                "validation_accuracy": 0.57,
+                "validation_time": 0.11283683776855469
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.58925,
+                "training_time": 3.378363847732544,
+                "validation_accuracy": 0.57,
+                "validation_time": 0.11907601356506348
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.6125,
+                "training_time": 3.3020098209381104,
+                "validation_accuracy": 0.52125,
+                "validation_time": 0.11339902877807617
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.62575,
+                "training_time": 3.26495099067688,
+                "validation_accuracy": 0.57875,
+                "validation_time": 0.1194450855255127
+            },
+            {
+                "epoch": 6,
+                "training_accuracy": 0.653625,
+                "training_time": 3.2603249549865723,
+                "validation_accuracy": 0.6175,
+                "validation_time": 0.13512706756591797
+            },
+            {
+                "epoch": 7,
+                "training_accuracy": 0.677625,
+                "training_time": 3.184217929840088,
+                "validation_accuracy": 0.595,
+                "validation_time": 0.12026405334472656
+            },
+            {
+                "epoch": 8,
+                "training_accuracy": 0.68125,
+                "training_time": 3.195019006729126,
+                "validation_accuracy": 0.61,
+                "validation_time": 0.10983896255493164
+            },
+            {
+                "epoch": 9,
+                "training_accuracy": 0.708375,
+                "training_time": 3.255521059036255,
+                "validation_accuracy": 0.615,
+                "validation_time": 0.24006009101867676
+            },
+            {
+                "epoch": 10,
+                "training_accuracy": 0.724875,
+                "training_time": 3.2634479999542236,
+                "validation_accuracy": 0.6125,
+                "validation_time": 0.10949301719665527
+            },
+            {
+                "epoch": 11,
+                "training_accuracy": 0.72575,
+                "training_time": 3.1329381465911865,
+                "validation_accuracy": 0.62,
+                "validation_time": 0.14267683029174805
+            },
+            {
+                "epoch": 12,
+                "training_accuracy": 0.755,
+                "training_time": 3.0903077125549316,
+                "validation_accuracy": 0.61125,
+                "validation_time": 0.11046695709228516
+            },
+            {
+                "epoch": 13,
+                "training_accuracy": 0.763875,
+                "training_time": 3.0614631175994873,
+                "validation_accuracy": 0.5375,
+                "validation_time": 0.11030888557434082
+            },
+            {
+                "epoch": 14,
+                "training_accuracy": 0.773125,
+                "training_time": 3.06520414352417,
+                "validation_accuracy": 0.6,
+                "validation_time": 0.10977578163146973
+            },
+            {
+                "epoch": 15,
+                "training_accuracy": 0.797,
+                "training_time": 3.1126201152801514,
+                "validation_accuracy": 0.6025,
+                "validation_time": 0.1092689037322998
+            },
+            {
+                "epoch": 16,
+                "training_accuracy": 0.802375,
+                "training_time": 3.0905871391296387,
+                "validation_accuracy": 0.605,
+                "validation_time": 0.10967493057250977
+            },
+            {
+                "epoch": 17,
+                "training_accuracy": 0.8055,
+                "training_time": 3.0865769386291504,
+                "validation_accuracy": 0.5925,
+                "validation_time": 0.1104271411895752
+            },
+            {
+                "epoch": 18,
+                "training_accuracy": 0.792375,
+                "training_time": 3.0743937492370605,
+                "validation_accuracy": 0.61125,
+                "validation_time": 0.11096882820129395
+            },
+            {
+                "epoch": 19,
+                "training_accuracy": 0.82225,
+                "training_time": 3.0714292526245117,
+                "validation_accuracy": 0.61625,
+                "validation_time": 0.11198282241821289
+            },
+            {
+                "epoch": 20,
+                "training_accuracy": 0.8285,
+                "training_time": 3.0769588947296143,
+                "validation_accuracy": 0.59125,
+                "validation_time": 0.14089226722717285
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 10,
+            "learning_rate": 0.001,
+            "momentum": 0.9,
+            "batch_size": 16,
+            "note": "Changed optimizer to Adam with learning_rate=0.001, hidden_dim=50, batch_size=16. Hypothesis: Adam optimizer may improve convergence speed and validation accuracy."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.416125,
+                "training_time": 3.9286372661590576,
+                "validation_accuracy": 0.4775,
+                "validation_time": 0.16756987571716309
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.49475,
+                "training_time": 3.0872671604156494,
+                "validation_accuracy": 0.53125,
+                "validation_time": 0.11363506317138672
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.5305,
+                "training_time": 3.206231117248535,
+                "validation_accuracy": 0.54625,
+                "validation_time": 0.11170721054077148
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.5635,
+                "training_time": 3.22977614402771,
+                "validation_accuracy": 0.555,
+                "validation_time": 0.18480706214904785
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.58375,
+                "training_time": 3.1845998764038086,
+                "validation_accuracy": 0.56,
+                "validation_time": 0.10987997055053711
+            },
+            {
+                "epoch": 6,
+                "training_accuracy": 0.59825,
+                "training_time": 3.1224849224090576,
+                "validation_accuracy": 0.595,
+                "validation_time": 0.10998296737670898
+            },
+            {
+                "epoch": 7,
+                "training_accuracy": 0.614625,
+                "training_time": 3.084890127182007,
+                "validation_accuracy": 0.605,
+                "validation_time": 0.11120486259460449
+            },
+            {
+                "epoch": 8,
+                "training_accuracy": 0.626375,
+                "training_time": 3.1581778526306152,
+                "validation_accuracy": 0.59375,
+                "validation_time": 0.13535690307617188
+            },
+            {
+                "epoch": 9,
+                "training_accuracy": 0.647,
+                "training_time": 3.0927650928497314,
+                "validation_accuracy": 0.61,
+                "validation_time": 0.10988497734069824
+            },
+            {
+                "epoch": 10,
+                "training_accuracy": 0.655625,
+                "training_time": 3.165828227996826,
+                "validation_accuracy": 0.61875,
+                "validation_time": 0.11606621742248535
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 10,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "batch_size": 16,
+            "note": "Increased dropout rate to 0.5 with hidden_dim=50. Hypothesis: Higher dropout rate may prevent overfitting and improve validation accuracy."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.457375,
+                "training_time": 3.9839420318603516,
+                "validation_accuracy": 0.54125,
+                "validation_time": 0.18564987182617188
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.514125,
+                "training_time": 3.1927831172943115,
+                "validation_accuracy": 0.54125,
+                "validation_time": 0.1136629581451416
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.538125,
+                "training_time": 3.1841559410095215,
+                "validation_accuracy": 0.5725,
+                "validation_time": 0.11673927307128906
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.54425,
+                "training_time": 3.179906129837036,
+                "validation_accuracy": 0.56,
+                "validation_time": 0.1700270175933838
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.5635,
+                "training_time": 3.1249630451202393,
+                "validation_accuracy": 0.55875,
+                "validation_time": 0.11174416542053223
+            },
+            {
+                "epoch": 6,
+                "training_accuracy": 0.567,
+                "training_time": 3.1983580589294434,
+                "validation_accuracy": 0.5775,
+                "validation_time": 0.1113748550415039
+            },
+            {
+                "epoch": 7,
+                "training_accuracy": 0.572875,
+                "training_time": 3.473358154296875,
+                "validation_accuracy": 0.5875,
+                "validation_time": 0.12427520751953125
+            },
+            {
+                "epoch": 8,
+                "training_accuracy": 0.57575,
+                "training_time": 3.080664873123169,
+                "validation_accuracy": 0.595,
+                "validation_time": 0.1089322566986084
+            },
+            {
+                "epoch": 9,
+                "training_accuracy": 0.595625,
+                "training_time": 4.169368267059326,
+                "validation_accuracy": 0.6025,
+                "validation_time": 0.11432409286499023
+            },
+            {
+                "epoch": 10,
+                "training_accuracy": 0.588875,
+                "training_time": 3.7448770999908447,
+                "validation_accuracy": 0.585,
+                "validation_time": 0.14554715156555176
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 10,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "batch_size": 16,
+            "weight_decay": 0.0001,
+            "note": "Added weight decay of 0.0001 to optimizer for L2 regularization. Hypothesis: L2 regularization will reduce overfitting and improve validation accuracy."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.457375,
+                "training_time": 3.821633815765381,
+                "validation_accuracy": 0.54125,
+                "validation_time": 0.18826603889465332
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.514125,
+                "training_time": 3.0892741680145264,
+                "validation_accuracy": 0.54125,
+                "validation_time": 0.10802698135375977
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.538125,
+                "training_time": 3.3103392124176025,
+                "validation_accuracy": 0.5725,
+                "validation_time": 0.11189103126525879
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.54425,
+                "training_time": 3.34983491897583,
+                "validation_accuracy": 0.56,
+                "validation_time": 0.1722278594970703
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.5635,
+                "training_time": 3.1385271549224854,
+                "validation_accuracy": 0.55875,
+                "validation_time": 0.11159491539001465
+            },
+            {
+                "epoch": 6,
+                "training_accuracy": 0.567,
+                "training_time": 3.142486095428467,
+                "validation_accuracy": 0.5775,
+                "validation_time": 0.10989499092102051
+            },
+            {
+                "epoch": 7,
+                "training_accuracy": 0.572875,
+                "training_time": 3.1037039756774902,
+                "validation_accuracy": 0.5875,
+                "validation_time": 0.11204910278320312
+            },
+            {
+                "epoch": 8,
+                "training_accuracy": 0.57575,
+                "training_time": 3.2360777854919434,
+                "validation_accuracy": 0.595,
+                "validation_time": 0.13818693161010742
+            },
+            {
+                "epoch": 9,
+                "training_accuracy": 0.595625,
+                "training_time": 3.1909172534942627,
+                "validation_accuracy": 0.6025,
+                "validation_time": 0.11875724792480469
+            },
+            {
+                "epoch": 10,
+                "training_accuracy": 0.588875,
+                "training_time": 3.32437801361084,
+                "validation_accuracy": 0.585,
+                "validation_time": 0.11483597755432129
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 20,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "batch_size": 16,
+            "weight_decay": 0.0,
+            "note": "Implemented learning rate decay (reduce by half every 5 epochs). Hypothesis: Decaying learning rate may help the model fine-tune weights and improve validation accuracy."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.457375,
+                "training_time": 3.8741166591644287,
+                "validation_accuracy": 0.54125,
+                "validation_time": 0.1826481819152832
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.514125,
+                "training_time": 3.0684280395507812,
+                "validation_accuracy": 0.54125,
+                "validation_time": 0.11189818382263184
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.538125,
+                "training_time": 3.1565279960632324,
+                "validation_accuracy": 0.5725,
+                "validation_time": 0.10982084274291992
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.54425,
+                "training_time": 3.410537004470825,
+                "validation_accuracy": 0.56,
+                "validation_time": 0.11617898941040039
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.5635,
+                "training_time": 3.212109088897705,
+                "validation_accuracy": 0.55875,
+                "validation_time": 0.12470602989196777
+            },
+            {
+                "epoch": 6,
+                "training_accuracy": 0.567,
+                "training_time": 3.14495587348938,
+                "validation_accuracy": 0.5775,
+                "validation_time": 0.11069416999816895
+            },
+            {
+                "epoch": 7,
+                "training_accuracy": 0.572875,
+                "training_time": 3.1741209030151367,
+                "validation_accuracy": 0.5875,
+                "validation_time": 0.1152498722076416
+            },
+            {
+                "epoch": 8,
+                "training_accuracy": 0.57575,
+                "training_time": 3.2170162200927734,
+                "validation_accuracy": 0.595,
+                "validation_time": 0.18491101264953613
+            },
+            {
+                "epoch": 9,
+                "training_accuracy": 0.595625,
+                "training_time": 3.228811025619507,
+                "validation_accuracy": 0.6025,
+                "validation_time": 0.14391016960144043
+            },
+            {
+                "epoch": 10,
+                "training_accuracy": 0.588875,
+                "training_time": 3.1088571548461914,
+                "validation_accuracy": 0.585,
+                "validation_time": 0.11208796501159668
+            },
+            {
+                "epoch": 11,
+                "training_accuracy": 0.592125,
+                "training_time": 3.143460988998413,
+                "validation_accuracy": 0.5775,
+                "validation_time": 0.11277294158935547
+            },
+            {
+                "epoch": 12,
+                "training_accuracy": 0.605125,
+                "training_time": 3.2363710403442383,
+                "validation_accuracy": 0.595,
+                "validation_time": 0.11614012718200684
+            },
+            {
+                "epoch": 13,
+                "training_accuracy": 0.62,
+                "training_time": 3.2837789058685303,
+                "validation_accuracy": 0.61125,
+                "validation_time": 0.12378621101379395
+            },
+            {
+                "epoch": 14,
+                "training_accuracy": 0.610125,
+                "training_time": 3.1791138648986816,
+                "validation_accuracy": 0.6025,
+                "validation_time": 0.11075091361999512
+            },
+            {
+                "epoch": 15,
+                "training_accuracy": 0.614375,
+                "training_time": 3.1146700382232666,
+                "validation_accuracy": 0.6025,
+                "validation_time": 0.1161031723022461
+            },
+            {
+                "epoch": 16,
+                "training_accuracy": 0.624875,
+                "training_time": 3.074763059616089,
+                "validation_accuracy": 0.5875,
+                "validation_time": 0.10951399803161621
+            },
+            {
+                "epoch": 17,
+                "training_accuracy": 0.628625,
+                "training_time": 3.1119818687438965,
+                "validation_accuracy": 0.61875,
+                "validation_time": 0.11204719543457031
+            },
+            {
+                "epoch": 18,
+                "training_accuracy": 0.615875,
+                "training_time": 3.1165027618408203,
+                "validation_accuracy": 0.60375,
+                "validation_time": 0.11176705360412598
+            },
+            {
+                "epoch": 19,
+                "training_accuracy": 0.64675,
+                "training_time": 3.6055169105529785,
+                "validation_accuracy": 0.605,
+                "validation_time": 0.14554286003112793
+            },
+            {
+                "epoch": 20,
+                "training_accuracy": 0.651875,
+                "training_time": 3.2464101314544678,
+                "validation_accuracy": 0.605,
+                "validation_time": 0.11074090003967285
+            }
+        ]
     }
 ]
