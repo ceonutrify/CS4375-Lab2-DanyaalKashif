@@ -51,5 +51,509 @@
                 "validation_time": 2.010806083679199
             }
         ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 100,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "batch_size": 16,
+            "weight_decay": 0.0,
+            "num_layers": 1,
+            "note": "Increased hidden_dim to 100 for higher capacity."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.4225,
+                "training_time": 88.60525012016296,
+                "validation_accuracy": 0.525,
+                "validation_time": 2.5762102603912354
+            },
+            {
+                "epoch": 2,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.51325,
+                "training_time": 85.07615733146667,
+                "validation_accuracy": 0.55875,
+                "validation_time": 1.960202693939209
+            },
+            {
+                "epoch": 3,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.49975,
+                "training_time": 81.93971467018127,
+                "validation_accuracy": 0.545,
+                "validation_time": 1.9840562343597412
+            },
+            {
+                "epoch": 4,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.534625,
+                "training_time": 83.79522013664246,
+                "validation_accuracy": 0.54,
+                "validation_time": 2.087878942489624
+            },
+            {
+                "epoch": 5,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.548625,
+                "training_time": 82.66603422164917,
+                "validation_accuracy": 0.5525,
+                "validation_time": 1.9706487655639648
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "batch_size": 16,
+            "weight_decay": 0.0,
+            "num_layers": 2,
+            "note": "Added an extra RNN layer to increase model depth."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.45475,
+                "training_time": 170.93309807777405,
+                "validation_accuracy": 0.48,
+                "validation_time": 4.0934038162231445
+            },
+            {
+                "epoch": 2,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.50525,
+                "training_time": 165.9680278301239,
+                "validation_accuracy": 0.53125,
+                "validation_time": 3.5503990650177
+            },
+            {
+                "epoch": 3,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.5365,
+                "training_time": 162.35833716392517,
+                "validation_accuracy": 0.48875,
+                "validation_time": 3.5332398414611816
+            },
+            {
+                "epoch": 4,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.545875,
+                "training_time": 167.58878469467163,
+                "validation_accuracy": 0.52875,
+                "validation_time": 3.483020067214966
+            },
+            {
+                "epoch": 5,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.534375,
+                "training_time": 164.45934391021729,
+                "validation_accuracy": 0.55875,
+                "validation_time": 3.552701234817505
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 5,
+            "learning_rate": 0.001,
+            "batch_size": 16,
+            "weight_decay": 0.0,
+            "num_layers": 1,
+            "note": "Reduced learning rate to 0.001 for more stable learning."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "learning_rate": 0.001,
+                "training_accuracy": 0.47775,
+                "training_time": 860.4402339458466,
+                "validation_accuracy": 0.5725,
+                "validation_time": 2.482513904571533
+            },
+            {
+                "epoch": 2,
+                "learning_rate": 0.001,
+                "training_accuracy": 0.4975,
+                "training_time": 82.0673840045929,
+                "validation_accuracy": 0.55,
+                "validation_time": 1.9391770362854004
+            },
+            {
+                "epoch": 3,
+                "learning_rate": 0.001,
+                "training_accuracy": 0.50975,
+                "training_time": 79.58602595329285,
+                "validation_accuracy": 0.5875,
+                "validation_time": 1.957550048828125
+            },
+            {
+                "epoch": 4,
+                "learning_rate": 0.001,
+                "training_accuracy": 0.531625,
+                "training_time": 81.77627897262573,
+                "validation_accuracy": 0.545,
+                "validation_time": 1.9453749656677246
+            },
+            {
+                "epoch": 5,
+                "learning_rate": 0.001,
+                "training_accuracy": 0.52625,
+                "training_time": 81.17572522163391,
+                "validation_accuracy": 0.555,
+                "validation_time": 1.956611156463623
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 5,
+            "learning_rate": 0.1,
+            "batch_size": 16,
+            "weight_decay": 0.01,
+            "num_layers": 1,
+            "note": "Increased learning rate to 0.1 with weight decay of 0.01 for regularization."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "learning_rate": 0.1,
+                "training_accuracy": 0.405375,
+                "training_time": 86.61036491394043,
+                "validation_accuracy": 0.37,
+                "validation_time": 2.4805550575256348
+            },
+            {
+                "epoch": 2,
+                "learning_rate": 0.1,
+                "training_accuracy": 0.371625,
+                "training_time": 82.15968012809753,
+                "validation_accuracy": 0.4125,
+                "validation_time": 1.9327151775360107
+            },
+            {
+                "epoch": 3,
+                "learning_rate": 0.1,
+                "training_accuracy": 0.403375,
+                "training_time": 79.56771421432495,
+                "validation_accuracy": 0.4575,
+                "validation_time": 1.9609580039978027
+            },
+            {
+                "epoch": 4,
+                "learning_rate": 0.1,
+                "training_accuracy": 0.41075,
+                "training_time": 84.54554414749146,
+                "validation_accuracy": 0.4,
+                "validation_time": 1.9439730644226074
+            },
+            {
+                "epoch": 5,
+                "learning_rate": 0.1,
+                "training_accuracy": 0.407125,
+                "training_time": 80.6999249458313,
+                "validation_accuracy": 0.31625,
+                "validation_time": 1.9467847347259521
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "batch_size": 32,
+            "weight_decay": 0.0,
+            "num_layers": 1,
+            "note": "Increased batch size to 32 to observe effects on training stability."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.487125,
+                "training_time": 57.70218276977539,
+                "validation_accuracy": 0.51375,
+                "validation_time": 1.4836022853851318
+            },
+            {
+                "epoch": 2,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.5115,
+                "training_time": 55.78563594818115,
+                "validation_accuracy": 0.43625,
+                "validation_time": 1.1394259929656982
+            },
+            {
+                "epoch": 3,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.53025,
+                "training_time": 55.05866980552673,
+                "validation_accuracy": 0.5275,
+                "validation_time": 1.1859838962554932
+            },
+            {
+                "epoch": 4,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.559375,
+                "training_time": 55.50228214263916,
+                "validation_accuracy": 0.57375,
+                "validation_time": 1.1215417385101318
+            },
+            {
+                "epoch": 5,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.559875,
+                "training_time": 54.684115171432495,
+                "validation_accuracy": 0.57,
+                "validation_time": 1.1298952102661133
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "batch_size": 8,
+            "weight_decay": 0.0,
+            "num_layers": 1,
+            "note": "Reduced batch size to 8 for potential generalization improvements."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.46275,
+                "training_time": 125.03731989860535,
+                "validation_accuracy": 0.505,
+                "validation_time": 3.878258228302002
+            },
+            {
+                "epoch": 2,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.50625,
+                "training_time": 118.66404104232788,
+                "validation_accuracy": 0.51375,
+                "validation_time": 3.2032580375671387
+            },
+            {
+                "epoch": 3,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.4925,
+                "training_time": 115.54551005363464,
+                "validation_accuracy": 0.47,
+                "validation_time": 3.593379020690918
+            },
+            {
+                "epoch": 4,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.48925,
+                "training_time": 119.88847064971924,
+                "validation_accuracy": 0.51125,
+                "validation_time": 3.310905933380127
+            },
+            {
+                "epoch": 5,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.518125,
+                "training_time": 119.37031674385071,
+                "validation_accuracy": 0.52,
+                "validation_time": 3.3679609298706055
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 10,
+            "learning_rate": 0.01,
+            "batch_size": 16,
+            "weight_decay": 0.0,
+            "num_layers": 1,
+            "note": "Extended epochs to 10 for baseline to observe long-term behavior."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.475375,
+                "training_time": 87.40977311134338,
+                "validation_accuracy": 0.48125,
+                "validation_time": 2.4723927974700928
+            },
+            {
+                "epoch": 2,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.529375,
+                "training_time": 83.23681497573853,
+                "validation_accuracy": 0.5475,
+                "validation_time": 1.9604158401489258
+            },
+            {
+                "epoch": 3,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.492,
+                "training_time": 80.54308414459229,
+                "validation_accuracy": 0.41625,
+                "validation_time": 1.943850040435791
+            },
+            {
+                "epoch": 4,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.45475,
+                "training_time": 82.34632873535156,
+                "validation_accuracy": 0.4125,
+                "validation_time": 1.9629082679748535
+            },
+            {
+                "epoch": 5,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.444375,
+                "training_time": 83.46724510192871,
+                "validation_accuracy": 0.49,
+                "validation_time": 1.9972279071807861
+            },
+            {
+                "epoch": 6,
+                "learning_rate": 0.005,
+                "training_accuracy": 0.466125,
+                "training_time": 84.90265917778015,
+                "validation_accuracy": 0.50625,
+                "validation_time": 2.01381778717041
+            },
+            {
+                "epoch": 7,
+                "learning_rate": 0.005,
+                "training_accuracy": 0.468375,
+                "training_time": 83.6781120300293,
+                "validation_accuracy": 0.4125,
+                "validation_time": 1.9866271018981934
+            },
+            {
+                "epoch": 8,
+                "learning_rate": 0.005,
+                "training_accuracy": 0.478125,
+                "training_time": 82.66073298454285,
+                "validation_accuracy": 0.52125,
+                "validation_time": 2.0070018768310547
+            },
+            {
+                "epoch": 9,
+                "learning_rate": 0.005,
+                "training_accuracy": 0.467125,
+                "training_time": 84.25089502334595,
+                "validation_accuracy": 0.50875,
+                "validation_time": 2.00496506690979
+            },
+            {
+                "epoch": 10,
+                "learning_rate": 0.005,
+                "training_accuracy": 0.481875,
+                "training_time": 84.62181901931763,
+                "validation_accuracy": 0.48,
+                "validation_time": 2.024998903274536
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 100,
+            "epochs": 10,
+            "learning_rate": 0.01,
+            "batch_size": 16,
+            "weight_decay": 0.0,
+            "num_layers": 1,
+            "note": "Increased hidden_dim to 100 and extended epochs with learning rate decay."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.4225,
+                "training_time": 87.28694796562195,
+                "validation_accuracy": 0.525,
+                "validation_time": 2.4581351280212402
+            },
+            {
+                "epoch": 2,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.51325,
+                "training_time": 83.1162121295929,
+                "validation_accuracy": 0.55875,
+                "validation_time": 1.921112060546875
+            },
+            {
+                "epoch": 3,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.49975,
+                "training_time": 80.56420421600342,
+                "validation_accuracy": 0.545,
+                "validation_time": 1.9398677349090576
+            },
+            {
+                "epoch": 4,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.534625,
+                "training_time": 84.14846706390381,
+                "validation_accuracy": 0.54,
+                "validation_time": 1.9779038429260254
+            },
+            {
+                "epoch": 5,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.548625,
+                "training_time": 82.22669005393982,
+                "validation_accuracy": 0.5525,
+                "validation_time": 2.01023530960083
+            },
+            {
+                "epoch": 6,
+                "learning_rate": 0.005,
+                "training_accuracy": 0.557625,
+                "training_time": 83.55510807037354,
+                "validation_accuracy": 0.57375,
+                "validation_time": 1.984037160873413
+            },
+            {
+                "epoch": 7,
+                "learning_rate": 0.005,
+                "training_accuracy": 0.559875,
+                "training_time": 82.53864312171936,
+                "validation_accuracy": 0.56625,
+                "validation_time": 1.9963600635528564
+            },
+            {
+                "epoch": 8,
+                "learning_rate": 0.005,
+                "training_accuracy": 0.5595,
+                "training_time": 83.32600998878479,
+                "validation_accuracy": 0.5775,
+                "validation_time": 1.9721112251281738
+            },
+            {
+                "epoch": 9,
+                "learning_rate": 0.005,
+                "training_accuracy": 0.562,
+                "training_time": 84.45576333999634,
+                "validation_accuracy": 0.56125,
+                "validation_time": 2.0022132396698
+            },
+            {
+                "epoch": 10,
+                "learning_rate": 0.005,
+                "training_accuracy": 0.559875,
+                "training_time": 83.74062013626099,
+                "validation_accuracy": 0.565,
+                "validation_time": 2.0043399333953857
+            }
+        ]
     }
 ]
