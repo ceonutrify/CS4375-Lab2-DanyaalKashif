@@ -21,6 +21,4 @@ One example on running the code:
 ``--train_data training.json --val_data validation.json``
 
 =======
-# CS4375-Lab2-DanyaalKashif
-CS 4375 Lab 2
 >>>>>>> 66000c2a2673ba56b070801be11f3044bddc7861
