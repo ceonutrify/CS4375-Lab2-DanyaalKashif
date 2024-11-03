@@ -1,0 +1,96 @@
+[
+    {
+        "hyperparameters": {
+            "hidden_dim": 10,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "minibatch_size": 16,
+            "note": "Adjusted hidden_dim to 10 and epochs to 5 for testing"
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.457,
+                "training_time": 3.668887138366699,
+                "validation_accuracy": 0.53625,
+                "validation_time": 0.14629507064819336
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.524625,
+                "training_time": 3.1650938987731934,
+                "validation_accuracy": 0.575,
+                "validation_time": 0.09329104423522949
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.5445,
+                "training_time": 3.1577022075653076,
+                "validation_accuracy": 0.5575,
+                "validation_time": 0.09309792518615723
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.566625,
+                "training_time": 3.427661180496216,
+                "validation_accuracy": 0.56375,
+                "validation_time": 0.13392019271850586
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.5775,
+                "training_time": 3.424889087677002,
+                "validation_accuracy": 0.5725,
+                "validation_time": 0.09956693649291992
+            }
+        ]
+    },
+    {
+        "hyperparameters": {
+            "hidden_dim": 10,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "momentum": 0.9,
+            "minibatch_size": 16,
+            "note": "Enabled MPS backend for GPU acceleration on Apple Silicon (MacBook Pro with M3 chip). Modified the script to:\n1. Detect and use MPS if available, defaulting to CPU otherwise. Device displayed in terminal at runtime.\n2. Move the model and all tensors (inputs, labels) to the selected device (MPS or CPU).\n3. Adjust data types for MPS compatibility: float32 for inputs, int64 for labels.\n4. Batch processing: modified training and validation loops to process minibatches on the device, improving parallelism and performance.\n5. Enabled no-grad mode for validation to improve speed and reduce memory usage.\n\nThese changes are aimed at utilizing the Apple Silicon GPU for faster training and validation, specifically for models that benefit from parallel processing."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "training_accuracy": 0.472125,
+                "training_time": 2.995258092880249,
+                "validation_accuracy": 0.545,
+                "validation_time": 0.20113587379455566
+            },
+            {
+                "epoch": 2,
+                "training_accuracy": 0.5325,
+                "training_time": 2.2666256427764893,
+                "validation_accuracy": 0.5675,
+                "validation_time": 0.13182425498962402
+            },
+            {
+                "epoch": 3,
+                "training_accuracy": 0.563875,
+                "training_time": 2.118022918701172,
+                "validation_accuracy": 0.575,
+                "validation_time": 0.132889986038208
+            },
+            {
+                "epoch": 4,
+                "training_accuracy": 0.582375,
+                "training_time": 2.1832289695739746,
+                "validation_accuracy": 0.5475,
+                "validation_time": 0.13174104690551758
+            },
+            {
+                "epoch": 5,
+                "training_accuracy": 0.59025,
+                "training_time": 2.146359920501709,
+                "validation_accuracy": 0.59375,
+                "validation_time": 0.13378691673278809
+            }
+        ]
+    }
+]
