@@ -1,0 +1,55 @@
+[
+    {
+        "hyperparameters": {
+            "hidden_dim": 50,
+            "epochs": 5,
+            "learning_rate": 0.01,
+            "batch_size": 16,
+            "weight_decay": 0.0,
+            "num_layers": 1,
+            "note": "Default parameters with hidden_dim=50 and epochs=5."
+        },
+        "results": [
+            {
+                "epoch": 1,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.475375,
+                "training_time": 87.94807076454163,
+                "validation_accuracy": 0.48125,
+                "validation_time": 2.530184030532837
+            },
+            {
+                "epoch": 2,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.529375,
+                "training_time": 85.64676594734192,
+                "validation_accuracy": 0.5475,
+                "validation_time": 2.0378928184509277
+            },
+            {
+                "epoch": 3,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.492,
+                "training_time": 83.45309066772461,
+                "validation_accuracy": 0.41625,
+                "validation_time": 2.040822982788086
+            },
+            {
+                "epoch": 4,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.45475,
+                "training_time": 82.93139696121216,
+                "validation_accuracy": 0.4125,
+                "validation_time": 1.9728689193725586
+            },
+            {
+                "epoch": 5,
+                "learning_rate": 0.01,
+                "training_accuracy": 0.444375,
+                "training_time": 83.28008103370667,
+                "validation_accuracy": 0.49,
+                "validation_time": 2.010806083679199
+            }
+        ]
+    }
+]
